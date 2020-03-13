@@ -2,7 +2,6 @@ const TOTAL = 1000;
 let dinos = [];
 let obstacles = [];
 let counter = 0;
-let slider;
 let neat;
 
 let config = {
@@ -16,7 +15,10 @@ let config = {
     populationSize: TOTAL
 };
 
-for (let i = 0; i < TOTAL; i++) {
-    dino[i] = new Dino();
+function setup() {
+    neat = new NEAT(config);
 }
-neat = new NEAT(config);
+
+function updateNeuralNet(state) {
+    console.log(state);
+}

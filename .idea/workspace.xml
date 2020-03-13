@@ -2,21 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b6523b-8a66-4ff3-aead-8e9d35fecc83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dinoML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/PressStart2P-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Actor.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Bird.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Cactus.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Cloud.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Dino.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_100_percent/100-disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_100_percent/100-error-offline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_100_percent/100-offline-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_200_percent/200-disabled.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_200_percent/200-error-offline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/default_200_percent/200-offline-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/hello-kugou.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/kumamon-runner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/novas-coisas.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/offline-sprite-1x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/offline-sprite-2x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/screenshot.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/t-rex-runner-19janil.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/t-rex-runner-bot.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Dino.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ActivationFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ActivationFunction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Creature.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Creature.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Crossover.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Crossover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Mutate.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Mutate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/NEAT.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NEAT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/NEAT_browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/NEAT_browser.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,23 +44,63 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/Dino.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/game_lib/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_lib/actors/Dino.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-552">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_lib/actors/Actor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game_lib/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -100,9 +154,14 @@
       <find>this.</find>
       <find>desicion</find>
       <find>export</find>
+      <find>var</find>
+      <find>draw</find>
+      <find>new</find>
+      <find>dino</find>
     </findStrings>
     <replaceStrings>
       <replace>decision</replace>
+      <replace>let</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -138,9 +197,14 @@
         <option value="$PROJECT_DIR$/js/Dino.js" />
         <option value="$PROJECT_DIR$/p5js_version/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/game_lib/index.js" />
+        <option value="$PROJECT_DIR$/js/dinoModel.js" />
+        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/game_lib/actors/Actor.js" />
+        <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/game_lib/actors/Dino.js" />
+        <option value="$PROJECT_DIR$/game_lib/index.js" />
       </list>
     </option>
   </component>
@@ -172,7 +236,13 @@
             <path>
               <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
               <item name="dinoML" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="game_lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dinoML" type="462c0819:PsiDirectoryNode" />
+              <item name="game_lib" type="462c0819:PsiDirectoryNode" />
+              <item name="actors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -186,12 +256,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shivv\Nextcloud\Documents\GitHub\dinoML\js" />
       <recent name="C:\Users\shivv\Nextcloud\Documents\GitHub\dinoML" />
+      <recent name="C:\Users\shivv\Nextcloud\Documents\GitHub\dinoML\js" />
       <recent name="C:\Users\shivv\Nextcloud\Documents\GitHub\dinoML\typer_pythonga" />
     </key>
   </component>
@@ -306,12 +377,12 @@
       <workItem from="1584128325421" duration="41000" />
       <workItem from="1584128386818" duration="3106000" />
       <workItem from="1584133188745" duration="172000" />
-      <workItem from="1584133377181" duration="2955000" />
+      <workItem from="1584133377181" duration="7607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31363000" />
+    <option name="totallyTimeSpent" value="36015000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -339,10 +410,10 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32714286" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5006605" side_tool="true" weight="0.2760646" />
       <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25110132" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.31541726" />
-      <window_info anchor="bottom" id="Floobits" order="13" weight="0.32892805" />
+      <window_info anchor="bottom" id="Floobits" order="13" sideWeight="0.4993395" weight="0.2760646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -465,26 +536,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Dino.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game_lib/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game_lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2254">
-          <caret line="98" column="37" lean-forward="true" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/preview.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -498,17 +549,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/js/Dino.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+        <state relative-caret-position="3892">
+          <caret line="2723" column="40" lean-forward="true" selection-start-line="2723" selection-start-column="40" selection-end-line="2723" selection-end-column="40" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://$PROJECT_DIR$/game_lib/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="391">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lib/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dinoModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lib/actors/Actor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lib/actors/Dino.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lib/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
