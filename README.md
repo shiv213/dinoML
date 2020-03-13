@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DinoML Planning
 
 #### Purpose
@@ -29,8 +28,3 @@ will we render all dinos in each generation?
 - Distance between closest obstacle and 2nd closest obstacles
 
 Fitness is determined by current score
-
-
-=======
-# dinoML
->>>>>>> 080aa8142fc8e002c096b7d54adf045ae2580271
