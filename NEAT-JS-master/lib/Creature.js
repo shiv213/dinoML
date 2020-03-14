@@ -28,7 +28,7 @@ function Creature(model) {
 		}
 
 		return genes;
-	}
+	};
 
 	this.setFlattenedGenes = function (genes) { // Sets an array of weights as the creature's genes.
 		for (let i = 0; i < this.network.layers.length - 1; i++) {
@@ -44,15 +44,15 @@ function Creature(model) {
 				genes.splice(0, 1);
 			}
 		}
-	}
+	};
 
 	this.feedForward = function () { // Feeds forward the creature's network.
 		this.network.feedForward();
-	}
+	};
 
 	this.setInputs = function (inputs) { // Sets the inputs of the creature.
 		this.network.layers[0].setValues(inputs);
-	}
+	};
 
 	this.desicion = function () { // Some spaghetti code that returns the desicion of the creature. For SOFTMAX outputs.
 		let index = -1; 

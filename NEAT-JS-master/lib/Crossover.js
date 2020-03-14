@@ -25,6 +25,6 @@ let crossover = { // Crossover methods.
 		return genesy;
 
 	}
-}
+};
 
 module.exports = crossover;

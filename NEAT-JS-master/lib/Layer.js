@@ -24,7 +24,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 		}
 
 		if (this.bias !== undefined) this.bias.initWeights(count);
-	}
+	};
 
 	this.feedForward = function (layer) { // Feeds forward the layers values to the specified layer.
 		for (let i = 0; i < this.bias.weights.length; i++) {
@@ -43,7 +43,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 
 		if (layer.activationfunc.name !== "SOFTMAX") for (let w = 0; w < layer.nodes.length; w++) layer.nodes[w].value = layer.activationfunc(layer.nodes[w].value);
 		else layer.setValues(layer.activationfunc(layer.getValues()));
-	}
+	};
 
 	this.getValues = function () { // Returns the values of the nodes in the layer as an array.
 		let result = [];
@@ -51,7 +51,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 			result.push(this.nodes[i].value);
 		}
 		return result;
-	}
+	};
 
 	this.setValues = function (values) { // Sets an array as the nodes values.
 		for (let i = 0; i < this.nodes.length; i++) {

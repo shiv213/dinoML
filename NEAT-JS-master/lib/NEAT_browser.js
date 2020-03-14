@@ -35,7 +35,7 @@ function NEAT(config) {
 			genes = this.mutationMethod(genes, this.mutationRate);
 			this.creatures[i].setFlattenedGenes(genes);
 		}
-	}
+	};
 
 	this.crossover = function () { // Takes two creature's genes flattens them and passes them to the crossover function.
 		for (let i = 0; i < this.populationSize; i++) {
@@ -46,7 +46,7 @@ function NEAT(config) {
 			let genes = this.crossoverMethod(parentx.flattenGenes(), parenty.flattenGenes());
 			this.creatures[i].setFlattenedGenes(genes);
 		}
-	}
+	};
 
 	this.pickCreature = function () { // Normalizes every creature's score (fitness) and and returns a creature based on their fitness value.
 		let sum = 0;
@@ -65,24 +65,24 @@ function NEAT(config) {
 		}
 		index -= 1;
 		return this.oldCreatures[index];
-	}
+	};
 
 	this.setFitness = function (fitness, index) { // Sets a creature's score. This will then be normalized for actual fitness value.
 		this.creatures[index].score = fitness;
-	}
+	};
 
 	this.feedForward = function () { // Feeds forward every creature's network.
 		for (let i = 0; i < this.creatures.length; i++) {
 			this.creatures[i].feedForward();
 		}
-	}
+	};
 
 	this.doGen = function () { // Does 1 fast generation with crossover and mutation.
 		this.crossover();
 		this.mutate();
 		this.generation++;
 		console.log('Generation: ' + this.generation);
-	}
+	};
 
 	this.bestCreature = function () { // Returns the index of the best creature from the previous generation.
 		let index = 0;
@@ -94,7 +94,7 @@ function NEAT(config) {
 			}
 		}
 		return index;
-	}
+	};
 
 	this.getDesicions = function () { // Returns every creature's desicion index in an array.
 		let result = [];
@@ -103,11 +103,11 @@ function NEAT(config) {
 			result.push(this.creatures[i].desicion());
 		}
 		return result;
-	}
+	};
 
 	this.setInputs = function (array, index) { // Sets the inputs of the creature indexed as "index".
 		this.creatures[index].setInputs(array);
-	}
+	};
 
 	this.export = function (index) {
 		let data = [];
@@ -121,7 +121,7 @@ function NEAT(config) {
 			}
 		}
 		return data;
-	}
+	};
 
 	this.import = function (data) {
 		if (JSON.stringify(data[0]) === JSON.stringify(this.exportModel)) {
@@ -160,7 +160,7 @@ function Creature(model) {
 		}
 
 		return genes;
-	}
+	};
 
 	this.setFlattenedGenes = function (genes) { // Sets an array of weights as the creature's genes.
 		for (let i = 0; i < this.network.layers.length - 1; i++) {
@@ -176,15 +176,15 @@ function Creature(model) {
 				genes.splice(0, 1);
 			}
 		}
-	}
+	};
 
 	this.feedForward = function () { // Feeds forward the creature's network.
 		this.network.feedForward();
-	}
+	};
 
 	this.setInputs = function (inputs) { // Sets the inputs of the creature.
 		this.network.layers[0].setValues(inputs);
-	}
+	};
 
 	this.desicion = function () { // Some spaghetti code that returns the desicion of the creature.
 		let index = -1; 
@@ -235,7 +235,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 		}
 
 		if (this.bias !== undefined) this.bias.initWeights(count);
-	}
+	};
 
 	this.feedForward = function (layer) { // Feeds forward the layers values to the specified layer.
 		for (let i = 0; i < this.bias.weights.length; i++) {
@@ -254,7 +254,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 
 		if (layer.activationfunc.name !== "SOFTMAX") for (let w = 0; w < layer.nodes.length; w++) layer.nodes[w].value = layer.activationfunc(layer.nodes[w].value);
 		else layer.setValues(layer.activationfunc(layer.getValues()));
-	}
+	};
 
 	this.getValues = function () { // Returns the values of the nodes in the layer as an array.
 		let result = [];
@@ -262,7 +262,7 @@ function Layer(nodeCount, type, activationfunc) { // A layer component of a netw
 			result.push(this.nodes[i].value);
 		}
 		return result;
-	}
+	};
 
 	this.setValues = function (values) { // Sets an array as the nodes values.
 		for (let i = 0; i < this.nodes.length; i++) {
@@ -309,7 +309,7 @@ let activation = { // Supported activation functions.
 		}
 		return result;
 	}
-}
+};
 
 let crossover = { // Crossover methods.
 	RANDOM: function (genesx, genesy) { // Randomly take genes from parentx or parenty and return newly created genes.
@@ -332,7 +332,7 @@ let crossover = { // Crossover methods.
 		return genesy;
 
 	}
-}
+};
 
 let mutate = { // Mutation function (More to come!).
 	RANDOM: function (genes, mutationRate) { // Randomly sets the weights to a completely random value.
@@ -341,5 +341,5 @@ let mutate = { // Mutation function (More to come!).
 		}
 		return genes;
 	}
-}
+};
 

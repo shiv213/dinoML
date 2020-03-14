@@ -40,7 +40,7 @@ function NEAT(config) {
 			genes = this.mutationMethod(genes, this.mutationRate);
 			this.creatures[i].setFlattenedGenes(genes);
 		}
-	}
+	};
 
 	this.crossover = function () { // Takes two creature's genes flattens them and passes them to the crossover function.
 		for (let i = 0; i < this.populationSize; i++) {
@@ -51,7 +51,7 @@ function NEAT(config) {
 			let genes = this.crossoverMethod(parentx.flattenGenes(), parenty.flattenGenes());
 			this.creatures[i].setFlattenedGenes(genes);
 		}
-	}
+	};
 
 	this.pickCreature = function () { // Normalizes every creature's score (fitness) and and returns a creature based on their fitness value.
 		let sum = 0;
@@ -70,24 +70,24 @@ function NEAT(config) {
 		}
 		index -= 1;
 		return this.oldCreatures[index];
-	}
+	};
 
 	this.setFitness = function (fitness, index) { // Sets a creature's score. This will then be normalized for actual fitness value.
 		this.creatures[index].score = fitness;
-	}
+	};
 
 	this.feedForward = function () { // Feeds forward every creature's network.
 		for (let i = 0; i < this.creatures.length; i++) {
 			this.creatures[i].feedForward();
 		}
-	}
+	};
 
 	this.doGen = function () { // Does 1 fast generation with crossover and mutation.
 		this.crossover();
 		this.mutate();
 		this.generation++;
 		console.log('Generation: ' + this.generation);
-	}
+	};
 
 	this.bestCreature = function () { // Returns the index of the best creature from the previous generation.
 		let index = 0;
@@ -99,7 +99,7 @@ function NEAT(config) {
 			}
 		}
 		return index;
-	}
+	};
 
 	this.getDesicions = function () { // Returns every creature's desicion index in an array.
 		let result = [];
@@ -108,11 +108,11 @@ function NEAT(config) {
 			result.push(this.creatures[i].desicion());
 		}
 		return result;
-	}
+	};
 
 	this.setInputs = function (array, index) { // Sets the inputs of the creature indexed as "index".
 		this.creatures[index].setInputs(array);
-	}
+	};
 
 	this.export = function (index) {
 		let data = [];
@@ -126,7 +126,7 @@ function NEAT(config) {
 			}
 		}
 		return data;
-	}
+	};
 
 	this.import = function (data) {
 		if (JSON.stringify(data[0]) === JSON.stringify(this.exportModel)) {

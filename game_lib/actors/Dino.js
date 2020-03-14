@@ -15,6 +15,7 @@ export default class Dino extends Actor {
         this.relativeY = 0;
         this.score = 0;
         this.dead = false;
+        this.bestMember = false;
     }
 
     y() {
@@ -123,8 +124,6 @@ export default class Dino extends Actor {
         let inputs = [];
         let closest = this.closestObstacle(state);
         // TODO Talk about these --I just commented out temporarily
-        // let closestBird = this.closestBird(obstacles);
-        // let closestCacti = this.closestCacti(obstacles);
         // Dino's y position
         inputs[0] = Dino.map(this.y(), 0, 150, 0, 1);
         // Dino's y velocity
@@ -137,8 +136,7 @@ export default class Dino extends Actor {
         inputs[4] = Dino.map(closest.height, 0, this.canvasHeight, 0, 1);
         // Y position of bird
         inputs[5] = Dino.map(this.birdYPos(state), 0, this.canvasHeight, 0, 1);
-        // TODO return distance between closest obstacle and 2nd closest obstacles
+        // TODO return distance between closest obstacle and 2nd closest obstacles --is this necessary?
         return inputs;
     }
-
 }

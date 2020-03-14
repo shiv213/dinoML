@@ -11,6 +11,6 @@ let mutate = { // Mutation function (More to come!).
 		}
 		return genes;
 	}
-}
+};
 
 module.exports = mutate;

@@ -66,7 +66,6 @@ new P5(p5 => {
         neat.doGen();
         generatePopulation(TOTAL);
         resetGame();
-        // TODO: add reset logic in here to reset simulations
     }
 
     function increaseDifficulty() {
@@ -151,8 +150,6 @@ new P5(p5 => {
                 spriteImage(STATE.dinos[i].sprite, STATE.dinos[i].x, STATE.dinos[i].y());
             } else if (!STATE.dinos[i]) {
                 spriteImage('dino', 25, (p5.height - (config.sprites.dino.h / 2) - 4));
-            } else {
-
             }
         }
     }
@@ -226,7 +223,7 @@ new P5(p5 => {
             isRunning: true,
             level: 0,
             score: 0,
-            alive: popSize
+            alive: popSize,
         });
 
         Object.assign(config.settings, SETTINGS_BACKUP);
@@ -263,6 +260,13 @@ new P5(p5 => {
         drawScore();
         if (STATE.dinos.length > 0) {
             updateNeuralNet(STATE);
+            for (let i = 0; i < TOTAL; i++) {
+                if (i === neat.bestCreature()) {
+                    STATE.dinos[i].bestMember = true;
+                } else {
+                    STATE.dinos[i].bestMember = false;
+                }
+            }
         }
         // console.log(STATE);
         if (STATE.level > 3) {
@@ -276,12 +280,12 @@ new P5(p5 => {
         }
 
         STATE.alive = TOTAL;
-        for (let i in STATE.dinos){
+        for (let i in STATE.dinos) {
             if (STATE.dinos[i].dead) {
                 STATE.alive--;
             }
         }
-        if (STATE.alive === 0){
+        if (STATE.alive === 0) {
             endGame();
         } else {
             updateScore();

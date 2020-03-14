@@ -1,4 +1,4 @@
-const TOTAL = 20;
+const TOTAL = 1000;
 let neat;
 
 let config = {
@@ -29,6 +29,6 @@ function updateNeuralNet(state) {
             state.dinos[i].duck(true);
         }
     }
-    document.getElementById("genNum").innerText = neat.getGen();
+    document.getElementById("genNum").innerText = neat.getGen()+1;
     document.getElementById("aliveNum").innerText = state.alive;
 }
