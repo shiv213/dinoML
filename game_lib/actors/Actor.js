@@ -5,6 +5,11 @@ export default class Actor {
     this._sprite = null;
     this.height = 0;
     this.width = 0;
+    this.shouldRender = false;
+  }
+
+  setShouldRender(enabled) {
+      this.shouldRender = enabled;
   }
 
   set sprite (name) {
@@ -22,14 +27,12 @@ export default class Actor {
       .filter(Boolean)
       .some(actor => {
         if (this.x >= (actor.x + actor.width) || actor.x >= (this.x + this.width)) {
-          return false
+          return false;
         }
 
-        if (this.y >= (actor.y + actor.height) || actor.y >= (this.y + this.height)) {
-          return false
-        }
+        return !(this.y >= (actor.y + actor.height) || actor.y >= (this.y + this.height));
 
-        return true
+
       })
   }
 }

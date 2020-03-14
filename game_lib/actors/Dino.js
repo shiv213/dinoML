@@ -14,10 +14,10 @@ export default class Dino extends Actor {
         this.x = 25;
         this.relativeY = 0;
         this.score = 0;
-        this.fitness = 0;
+        this.dead = false;
     }
 
-    get y() {
+    y() {
         return this.canvasHeight - this.height - 4 + this.relativeY;
     }
 
@@ -42,7 +42,10 @@ export default class Dino extends Actor {
             this.relativeY = 0;
         }
 
-        this.determineSprite();
+        if (this.shouldRender) {
+            this.determineSprite();
+        }
+
     }
 
     determineSprite() {
@@ -65,4 +68,44 @@ export default class Dino extends Actor {
             this.legFrames++;
         }
     }
+
+    closestObstacle(obstacles) {
+        if (typeof obstacles.birds[0] !== 'undefined') {
+            if (obstacles.cacti[0].x < obstacles.birds[0].x) {
+                return obstacles.cacti[0];
+            } else {
+                return obstacles.birds[0];
+            }
+        } else {
+            return obstacles.cacti[0];
+        }
+    }
+
+    static map(n, start1, stop1, start2, stop2) {
+        let x = (((n - start1) / (stop1 - start1)) * (stop2 - start2) + start2);
+        if (!isNaN(x)) {
+            return x;
+        } else {
+            return 0;
+        }
+    };
+
+    inputs(obstacles) {
+        let inputs = [];
+        let closest = this.closestObstacle(obstacles);
+        // Dino's y position
+        inputs[0] = Dino.map(this.y(), 0, 150, 0, 1);
+        // Dino's y velocity
+        inputs[1] = Dino.map(this.velocity, -5, 5, 0, 1);
+        // - Distance to next obstacle
+        inputs[2] = Dino.map(closest.x - this.x, 0, 600, 0, 1);
+        // - Width of obstacle
+        inputs[3] = Dino.map(closest.width, 0, 200, 0, 1); // TODO Add correct max obstacle width
+        // - Height of obstacle
+        inputs[4] = Dino.map(closest.height, 0, this.canvasHeight, 0, 1); // TODO Add correct max obstacle height
+        // TODO return bird height
+        // TODO return distance between closest obstacle and 2nd closest obstacles
+        return inputs;
+    }
+
 }

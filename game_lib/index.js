@@ -24,7 +24,8 @@ new P5(p5 => {
         groundY: 0,
         isRunning: false,
         level: 0,
-        score: 0
+        score: 0,
+        alive: 0
     };
     // eslint-disable-next-line no-unused-vars
     let PressStartFont, sprite;
@@ -41,22 +42,6 @@ new P5(p5 => {
     }
 
     function resetGame() {
-        const populationSize = 3;
-        let population = [];
-        for (let i = 0; i < populationSize; i++) {
-            population.push(new Dino(p5.height));
-        }
-        Object.assign(STATE, {
-            birds: [],
-            cacti: [],
-            dinos: population,
-            gameOver: false,
-            isRunning: true,
-            level: 0,
-            score: 0
-        });
-
-        Object.assign(config.settings, SETTINGS_BACKUP);
         p5.loop();
     }
 
@@ -69,7 +54,6 @@ new P5(p5 => {
         p5.textFont(PressStartFont);
         p5.textSize(12);
         p5.text('G A M E  O V E R', (p5.width / 2), (p5.height / 2 - p5.textSize() / 2 - padding));
-        console.log("over bruh");
         spriteImage('replayIcon', (p5.width / 2 - iconSprite.w / 4), (p5.height / 2 - iconSprite.h / 4 + padding));
 
         STATE.isRunning = false;
@@ -100,6 +84,7 @@ new P5(p5 => {
             const oldLevel = STATE.level;
 
             STATE.score++;
+            STATE.dinos.forEach(x => x.score++);
             STATE.level = Math.floor(STATE.score / 100);
 
             if (STATE.level !== oldLevel) {
@@ -213,7 +198,25 @@ new P5(p5 => {
             }
         }
     }
+    function generatePopulation(popSize){
+        let population = [];
+        for (let i = 0; i < popSize; i++) {
+            population.push(new Dino(p5.height));
+        }
+        Object.assign(STATE, {
+            birds: [],
+            cacti: [],
+            dinos: population,
+            gameOver: false,
+            isRunning: true,
+            level: 0,
+            score: 0,
+            alive: popSize
+        });
 
+        Object.assign(config.settings, SETTINGS_BACKUP);
+        resetGame();
+    }
     // triggered on pageload
     p5.preload = () => {
         PressStartFont = p5.loadFont('assets/PressStart2P-Regular.ttf');
@@ -227,8 +230,10 @@ new P5(p5 => {
         STATE.groundY = p5.height - config.sprites.ground.h / 2;
         p5.noLoop();
 
+        // Mouse click restarts game
         canvas.mouseClicked(() => {
-            if (STATE.gameOver) {
+            if (!STATE.gameOver) {
+                generatePopulation(TOTAL);
                 resetGame();
             }
         })
@@ -242,48 +247,46 @@ new P5(p5 => {
         drawDino();
         drawCacti();
         drawScore();
-        updateNeuralNet(STATE);
-
-        // Current speed
-        // Distance to next obstacle
-        // Width of obstacle
-        // Height of obstacle
-        // Player height
-        // Bird height
-        // Distance between closest obstacle and 2nd closest obstacles
-
+        // updateNeuralNet(STATE);
+        console.log(STATE);
         if (STATE.level > 3) {
             drawBirds();
         }
 
-        if (STATE.dino && STATE.dino.hits([STATE.cacti[0], STATE.birds[0]])) {
-            STATE.gameOver = true;
+        for (let i = 0; i < STATE.dinos.length; i++) {
+            if (STATE.dinos[i] && STATE.dinos[i].hits([STATE.cacti[0], STATE.birds[0]])) {
+                STATE.dinos[i].dead = true;
+            }
+            if (STATE.dinos[i].dead){
+                STATE.alive--;
+            }
         }
 
-        if (STATE.gameOver) {
+        if (STATE.alive === 0) {
             endGame();
         } else {
             updateScore();
         }
+
     };
 
-    p5.keyPressed = () => {
-        if (p5.key === ' ' || p5.keyCode === p5.UP_ARROW) {
-            if (STATE.isRunning) {
-                STATE.dino.jump();
-            } else {
-                resetGame();
-            }
-        } else if (p5.keyCode === p5.DOWN_ARROW) {
-            if (STATE.isRunning) {
-                STATE.dino.duck(true);
-            }
-        }
-    };
-
-    p5.keyReleased = () => {
-        if (p5.keyCode === p5.DOWN_ARROW) {
-            STATE.dino.duck(false);
-        }
-    }
+    // p5.keyPressed = () => {
+    //     if (p5.key === ' ' || p5.keyCode === p5.UP_ARROW) {
+    //         if (STATE.isRunning) {
+    //             STATE.dino.jump();
+    //         } else {
+    //             resetGame();
+    //         }
+    //     } else if (p5.keyCode === p5.DOWN_ARROW) {
+    //         if (STATE.isRunning) {
+    //             STATE.dino.duck(true);
+    //         }
+    //     }
+    // };
+    //
+    // p5.keyReleased = () => {
+    //     if (p5.keyCode === p5.DOWN_ARROW) {
+    //         STATE.dino.duck(false);
+    //     }
+    // }
 });
