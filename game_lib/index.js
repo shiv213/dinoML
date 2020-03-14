@@ -58,6 +58,15 @@ new P5(p5 => {
 
         STATE.isRunning = false;
         p5.noLoop();
+        STATE.gameOver = true;
+        for (let i = 0; i < TOTAL; i++) {
+            neat.setFitness(state.dinos[i].score, i);
+            state.dinos[i] = new Dino(p5.height);
+        }
+        neat.doGen();
+        generatePopulation(TOTAL);
+        resetGame();
+        // TODO: add reset logic in here to reset simulations
     }
 
     function increaseDifficulty() {
@@ -84,7 +93,11 @@ new P5(p5 => {
             const oldLevel = STATE.level;
 
             STATE.score++;
-            STATE.dinos.forEach(x => x.score++);
+            for (let i = 0; i < STATE.dinos.length; i++) {
+                if (!STATE.dinos[i].dead) {
+                    STATE.dinos[i].score++;
+                }
+            }
             STATE.level = Math.floor(STATE.score / 100);
 
             if (STATE.level !== oldLevel) {
@@ -132,13 +145,14 @@ new P5(p5 => {
     }
 
     function drawDino() {
-        const {dinos} = STATE;
-        for (let i = 0; i < dinos.length; i++) {
-            if (dinos[i]) {
-                dinos[i].nextFrame();
-                spriteImage(dinos[i].sprite, dinos[i].x, dinos[i].y);
+        for (let i = 0; i < TOTAL; i++) {
+            if (STATE.dinos[i] && !STATE.dinos[i].dead) {
+                STATE.dinos[i].nextFrame();
+                spriteImage(STATE.dinos[i].sprite, STATE.dinos[i].x, STATE.dinos[i].y());
+            } else if (!STATE.dinos[i]) {
+                spriteImage('dino', 25, (p5.height - (config.sprites.dino.h / 2) - 4));
             } else {
-                spriteImage(`dino${i}`, 25, (p5.height - (config.sprites.dinos[i].h / 2) - 4));
+
             }
         }
     }
@@ -198,7 +212,8 @@ new P5(p5 => {
             }
         }
     }
-    function generatePopulation(popSize){
+
+    function generatePopulation(popSize) {
         let population = [];
         for (let i = 0; i < popSize; i++) {
             population.push(new Dino(p5.height));
@@ -215,8 +230,8 @@ new P5(p5 => {
         });
 
         Object.assign(config.settings, SETTINGS_BACKUP);
-        resetGame();
     }
+
     // triggered on pageload
     p5.preload = () => {
         PressStartFont = p5.loadFont('assets/PressStart2P-Regular.ttf');
@@ -247,29 +262,31 @@ new P5(p5 => {
         drawDino();
         drawCacti();
         drawScore();
-        if (STATE.cacti.length > 0) {
+        if (STATE.dinos.length > 0) {
             updateNeuralNet(STATE);
         }
-        console.log(STATE);
+        // console.log(STATE);
         if (STATE.level > 3) {
             drawBirds();
         }
 
-        for (let i = 0; i < STATE.dinos.length; i++) {
+        for (let i = 0; i < TOTAL; i++) {
             if (STATE.dinos[i] && STATE.dinos[i].hits([STATE.cacti[0], STATE.birds[0]])) {
                 STATE.dinos[i].dead = true;
             }
-            if (STATE.dinos[i].dead){
+        }
+
+        STATE.alive = TOTAL;
+        for (let i in STATE.dinos){
+            if (STATE.dinos[i].dead) {
                 STATE.alive--;
             }
         }
-
-        if (STATE.alive === 0) {
+        if (STATE.alive === 0){
             endGame();
         } else {
             updateScore();
         }
-
     };
 
     // p5.keyPressed = () => {

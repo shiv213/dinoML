@@ -5,7 +5,7 @@ export default class Actor {
     this._sprite = null;
     this.height = 0;
     this.width = 0;
-    this.shouldRender = false;
+    this.shouldRender = true;
   }
 
   setShouldRender(enabled) {
@@ -29,8 +29,7 @@ export default class Actor {
         if (this.x >= (actor.x + actor.width) || actor.x >= (this.x + this.width)) {
           return false;
         }
-
-        return !(this.y >= (actor.y + actor.height) || actor.y >= (this.y + this.height));
+        return !(this.y() >= (actor.y + actor.height) || actor.y >= (this.y() + this.height));
 
 
       })

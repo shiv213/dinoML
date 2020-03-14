@@ -69,15 +69,36 @@ export default class Dino extends Actor {
         }
     }
 
-    closestObstacle(obstacles) {
-        if (typeof obstacles.birds[0] !== 'undefined') {
-            if (obstacles.cacti[0].x < obstacles.birds[0].x) {
-                return obstacles.cacti[0];
+    closestObstacle(state) {
+        // are we assuming obstacles is sorted by distance???
+        // I think it is --I made that assumption from the hits function
+        if (state.cacti.length > 0 && state.birds.length > 0) {
+            if (state.cacti[0].x < state.birds[0].x) {
+                return state.cacti[0];
             } else {
-                return obstacles.birds[0];
+                return state.birds[0];
             }
+        } else if (state.birds.length > 0) {
+            return state.birds[0];
+        } else if (state.cacti.length > 0) {
+            return state.cacti[0];
         } else {
-            return obstacles.cacti[0];
+            return {x: 600, width: 0, height: 0};
+        }
+    }
+
+    closestBird(state) {
+        let minX = state.birds[0].x;
+        for (let i = 0; i < state.birds.length; i++) {
+            if (state.birds[i].x < minX) {
+
+            }
+        }
+    }
+
+    closestCacti(state) {
+        if (state.cacti.length > 0) {
+            return state.cacti.reduce((min, cacti) => Math.min(min, cacti), state.cacti[0].x);
         }
     }
 
@@ -88,11 +109,15 @@ export default class Dino extends Actor {
         } else {
             return 0;
         }
-    };
+    }
+    ;
 
-    inputs(obstacles) {
+    inputs(state) {
         let inputs = [];
-        let closest = this.closestObstacle(obstacles);
+        let closest = this.closestObstacle(state);
+        // TODO Talk about these --I just commented out temporarily
+        // let closestBird = this.closestBird(obstacles);
+        // let closestCacti = this.closestCacti(obstacles);
         // Dino's y position
         inputs[0] = Dino.map(this.y(), 0, 150, 0, 1);
         // Dino's y velocity
