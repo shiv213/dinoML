@@ -241,13 +241,12 @@ new P5(p5 => {
     // triggered after preload
     p5.setup = () => {
         const canvas = p5.createCanvas(600, 150);
-
         STATE.groundY = p5.height - config.sprites.ground.h / 2;
         p5.noLoop();
 
         // Mouse click restarts game
         canvas.mouseClicked(() => {
-            if (!STATE.gameOver) {
+            if (!STATE.gameOver && STATE.dinos.length === 0) {
                 generatePopulation(TOTAL);
                 resetGame();
             }

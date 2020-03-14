@@ -3,7 +3,7 @@ let neat;
 
 let config = {
     model: [
-        {nodeCount: 5, type: "input"},
+        {nodeCount: 6, type: "input"},
         {nodeCount: 3, type: "output", activationfunc: activation.SOFTMAX}
     ],
     mutationRate: 0.1,
@@ -21,13 +21,14 @@ function updateNeuralNet(state) {
     }
     neat.feedForward();
     let decisions = neat.getDecisions();
-    console.log(decisions);
+    // console.log(decisions);
     for (let i = 0; i < TOTAL; i++) {
         if (decisions[i] === 1) {
             state.dinos[i].jump();
+        } else if (decisions[i] === 2) {
+            state.dinos[i].duck(true);
         }
-        // else if (decisions[i] === 2) {
-        //     state.dinos[i].duck();
-        // }
     }
+    document.getElementById("genNum").innerText = neat.getGen();
+    document.getElementById("aliveNum").innerText = state.alive;
 }

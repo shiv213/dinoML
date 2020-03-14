@@ -87,6 +87,14 @@ export default class Dino extends Actor {
         }
     }
 
+    birdYPos(state) {
+        if (state.birds.length > 0) {
+            return state.birds[0].y;
+        } else {
+            return 0;
+        }
+    }
+
     closestBird(state) {
         let minX = state.birds[0].x;
         for (let i = 0; i < state.birds.length; i++) {
@@ -110,7 +118,6 @@ export default class Dino extends Actor {
             return 0;
         }
     }
-    ;
 
     inputs(state) {
         let inputs = [];
@@ -125,10 +132,11 @@ export default class Dino extends Actor {
         // - Distance to next obstacle
         inputs[2] = Dino.map(closest.x - this.x, 0, 600, 0, 1);
         // - Width of obstacle
-        inputs[3] = Dino.map(closest.width, 0, 200, 0, 1); // TODO Add correct max obstacle width
+        inputs[3] = Dino.map(closest.width, 0, 200, 0, 1);
         // - Height of obstacle
-        inputs[4] = Dino.map(closest.height, 0, this.canvasHeight, 0, 1); // TODO Add correct max obstacle height
-        // TODO return bird height
+        inputs[4] = Dino.map(closest.height, 0, this.canvasHeight, 0, 1);
+        // Y position of bird
+        inputs[5] = Dino.map(this.birdYPos(state), 0, this.canvasHeight, 0, 1);
         // TODO return distance between closest obstacle and 2nd closest obstacles
         return inputs;
     }
