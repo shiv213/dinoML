@@ -1,5 +1,3 @@
-import Dino from "./game_lib/actors/Dino";
-
 const TOTAL = 5;
 let dinos = [];
 let obstacles = [];

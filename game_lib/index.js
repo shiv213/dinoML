@@ -247,7 +247,9 @@ new P5(p5 => {
         drawDino();
         drawCacti();
         drawScore();
-        // updateNeuralNet(STATE);
+        if (STATE.cacti.length > 0) {
+            updateNeuralNet(STATE);
+        }
         console.log(STATE);
         if (STATE.level > 3) {
             drawBirds();
