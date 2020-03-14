@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b6523b-8a66-4ff3-aead-8e9d35fecc83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Dino.js" beforeDir="false" afterPath="$PROJECT_DIR$/game_lib/actors/Dino.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/game_lib/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/neatjs/NEAT_browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/neatjs/NEAT_browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="230">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -29,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="298">
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_lib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="299" column="34" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="34" />
+            <state relative-caret-position="484">
+              <caret line="242" column="42" selection-start-line="242" selection-start-column="39" selection-end-line="242" selection-end-column="42" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -158,10 +154,10 @@
       <find>dogen</find>
       <find>birds</find>
       <find>console.log</find>
-      <find>canvas</find>
       <find>generation</find>
       <find>setup</find>
       <find>duck</find>
+      <find>canvas</find>
     </findStrings>
     <replaceStrings>
       <replace>decision</replace>
@@ -208,10 +204,10 @@
         <option value="$PROJECT_DIR$/NEAT-JS-master/examples/Flappy Bird/bird.js" />
         <option value="$PROJECT_DIR$/game_lib/actors/Actor.js" />
         <option value="$PROJECT_DIR$/lib/neatjs/NEAT_browser.js" />
-        <option value="$PROJECT_DIR$/game_lib/index.js" />
         <option value="$PROJECT_DIR$/game_lib/actors/Dino.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/main.js" />
+        <option value="$PROJECT_DIR$/game_lib/index.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -238,6 +234,11 @@
             <path>
               <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
               <item name="dinoML" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dinoML" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
@@ -403,12 +404,12 @@
       <workItem from="1584128386818" duration="3106000" />
       <workItem from="1584133188745" duration="172000" />
       <workItem from="1584133377181" duration="7673000" />
-      <workItem from="1584149147651" duration="16983000" />
+      <workItem from="1584149147651" duration="17930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53064000" />
+    <option name="totallyTimeSpent" value="54011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -423,7 +424,7 @@
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1321004" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1321004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -437,7 +438,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32714286" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501321" side_tool="true" weight="0.2760646" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25110132" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.25110132" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.31541726" />
       <window_info anchor="bottom" id="Floobits" order="13" sideWeight="0.49867898" weight="0.2760646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -630,10 +631,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/game_lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="299" column="34" selection-start-line="299" selection-start-column="30" selection-end-line="299" selection-end-column="34" />
+        <state relative-caret-position="484">
+          <caret line="242" column="42" selection-start-line="242" selection-start-column="39" selection-end-line="242" selection-end-column="42" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -642,18 +650,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="230">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
         </state>
       </provider>
     </entry>
