@@ -6,7 +6,7 @@ let config = {
         {nodeCount: 6, type: "input"},
         {nodeCount: 3, type: "output", activationfunc: activation.SOFTMAX}
     ],
-    mutationRate: 0.1,
+    mutationRate: 0.2,
     crossoverMethod: crossover.RANDOM,
     mutationMethod: mutate.RANDOM,
     populationSize: TOTAL
@@ -15,7 +15,6 @@ let config = {
 neat = new NEAT(config);
 
 function updateNeuralNet(state) {
-    // console.log(state);
     for (let i = 0; i < TOTAL; i++) {
         neat.setInputs(state.dinos[i].inputs(state), i);
     }

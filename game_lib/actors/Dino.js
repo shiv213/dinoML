@@ -70,9 +70,7 @@ export default class Dino extends Actor {
         }
     }
 
-    closestObstacle(state) {
-        // are we assuming obstacles is sorted by distance???
-        // I think it is --I made that assumption from the hits function
+    static closestObstacle(state) {
         if (state.cacti.length > 0 && state.birds.length > 0) {
             if (state.cacti[0].x < state.birds[0].x) {
                 return state.cacti[0];
@@ -88,26 +86,11 @@ export default class Dino extends Actor {
         }
     }
 
-    birdYPos(state) {
+    static birdYPos(state) {
         if (state.birds.length > 0) {
             return state.birds[0].y;
         } else {
             return 0;
-        }
-    }
-
-    closestBird(state) {
-        let minX = state.birds[0].x;
-        for (let i = 0; i < state.birds.length; i++) {
-            if (state.birds[i].x < minX) {
-
-            }
-        }
-    }
-
-    closestCacti(state) {
-        if (state.cacti.length > 0) {
-            return state.cacti.reduce((min, cacti) => Math.min(min, cacti), state.cacti[0].x);
         }
     }
 
@@ -122,8 +105,7 @@ export default class Dino extends Actor {
 
     inputs(state) {
         let inputs = [];
-        let closest = this.closestObstacle(state);
-        // TODO Talk about these --I just commented out temporarily
+        let closest = Dino.closestObstacle(state);
         // Dino's y position
         inputs[0] = Dino.map(this.y(), 0, 150, 0, 1);
         // Dino's y velocity
@@ -135,8 +117,7 @@ export default class Dino extends Actor {
         // - Height of obstacle
         inputs[4] = Dino.map(closest.height, 0, this.canvasHeight, 0, 1);
         // Y position of bird
-        inputs[5] = Dino.map(this.birdYPos(state), 0, this.canvasHeight, 0, 1);
-        // TODO return distance between closest obstacle and 2nd closest obstacles --is this necessary?
+        inputs[5] = Dino.map(Dino.birdYPos(state), 0, this.canvasHeight, 0, 1);
         return inputs;
     }
 }
