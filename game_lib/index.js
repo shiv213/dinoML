@@ -292,23 +292,23 @@ new P5(p5 => {
         }
     };
 
-    p5.keyPressed = () => {
-        if (p5.key === ' ' || p5.keyCode === p5.UP_ARROW) {
-            if (STATE.isRunning) {
-                STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
-            } else {
-                resetGame();
-            }
-        } else if (p5.keyCode === p5.DOWN_ARROW) {
-            if (STATE.isRunning) {
-                STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
-            }
-        }
-    };
-
-    p5.keyReleased = () => {
-        if (p5.keyCode === p5.DOWN_ARROW) {
-            STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
-        }
-    }
+    // p5.keyPressed = () => {
+    //     if (p5.key === ' ' || p5.keyCode === p5.UP_ARROW) {
+    //         if (STATE.isRunning) {
+    //             STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
+    //         } else {
+    //             resetGame();
+    //         }
+    //     } else if (p5.keyCode === p5.DOWN_ARROW) {
+    //         if (STATE.isRunning) {
+    //             STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
+    //         }
+    //     }
+    // };
+    //
+    // p5.keyReleased = () => {
+    //     if (p5.keyCode === p5.DOWN_ARROW) {
+    //         STATE.dinos.filter(x => !x.dead).forEach(x => x.jump());
+    //     }
+    // }
 });
