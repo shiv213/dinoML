@@ -3,15 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="b5b6523b-8a66-4ff3-aead-8e9d35fecc83" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/ActivationFunction.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/ActivationFunction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/Creature.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/Creature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/Crossover.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/Crossover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/Layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/Layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/Mutate.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/Mutate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/NEAT.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/NEAT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NEAT-JS-master/lib/NEAT_browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/NEAT-JS-master/lib/NEAT_browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/actors/Dino.js" beforeDir="false" afterPath="$PROJECT_DIR$/game_lib/actors/Dino.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/game_lib/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/assets/PressStart2P-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/assets/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/assets/preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/assets/sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/actors/Actor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/actors/Bird.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/actors/Cactus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/actors/Cloud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/actors/Dino.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/license" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-dino-master/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
+            <state relative-caret-position="276">
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
               </folding>
@@ -37,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
+            <state relative-caret-position="207">
+              <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -46,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_lib/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
+            <state relative-caret-position="897">
               <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -55,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_lib/actors/Dino.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="276">
@@ -70,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_lib/actors/Actor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
+            <state relative-caret-position="322">
               <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
@@ -79,17 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game_lib/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chrome-dino-master/lib/actors/Actor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="713">
+              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -97,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/neatjs/NEAT_browser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4190">
+            <state relative-caret-position="5934">
               <caret line="258" column="70" selection-start-line="258" selection-start-column="70" selection-end-line="258" selection-end-column="70" />
             </state>
           </provider>
@@ -106,7 +107,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NEAT-JS-master/examples/Flappy Bird/sketch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
+            <state relative-caret-position="1426">
               <caret line="62" column="23" selection-start-line="62" selection-end-line="63" />
             </state>
           </provider>
@@ -217,7 +218,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-15" />
     <option name="width" value="1950" />
     <option name="height" value="2075" />
@@ -228,17 +229,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
               <item name="dinoML" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dinoML" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dinoML" type="b2602c69:ProjectViewProjectNode" />
@@ -273,7 +270,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,12 +401,13 @@
       <workItem from="1584128386818" duration="3106000" />
       <workItem from="1584133188745" duration="172000" />
       <workItem from="1584133377181" duration="7673000" />
-      <workItem from="1584149147651" duration="24548000" />
+      <workItem from="1584149147651" duration="24653000" />
+      <workItem from="1584233327938" duration="1836000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60629000" />
+    <option name="totallyTimeSpent" value="62570000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -422,10 +419,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1321004" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1321004" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -441,7 +438,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.501321" side_tool="true" weight="0.2760646" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.25110132" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.31541726" />
-      <window_info anchor="bottom" id="Floobits" order="13" sideWeight="0.49867898" weight="0.2760646" />
+      <window_info active="true" anchor="bottom" id="Floobits" order="13" sideWeight="0.49867898" visible="true" weight="0.2760646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -587,13 +584,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NEAT-JS-master/examples/Flappy Bird/sketch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="23" selection-start-line="62" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chrome-dino-master/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -607,30 +597,6 @@
     <entry file="file://$PROJECT_DIR$/chrome-dino-master/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/chrome-dino-master/lib/actors/Actor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/neatjs/NEAT_browser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4190">
-          <caret line="258" column="70" selection-start-line="258" selection-start-column="70" selection-end-line="258" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chrome-dino-master/lib/actors/Dino.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
@@ -641,23 +607,9 @@
     <entry file="file://$PROJECT_DIR$/assets/sprite.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/game_lib/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game_lib/actors/Actor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/game_lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
+        <state relative-caret-position="897">
           <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -665,10 +617,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.js">
+    <entry file="file://$PROJECT_DIR$/game_lib/actors/Actor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="322">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_lib/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-dino-master/lib/actors/Actor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/neatjs/NEAT_browser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5934">
+          <caret line="258" column="70" selection-start-line="258" selection-start-column="70" selection-end-line="258" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NEAT-JS-master/examples/Flappy Bird/sketch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="62" column="23" selection-start-line="62" selection-end-line="63" />
         </state>
       </provider>
     </entry>
@@ -678,6 +658,23 @@
           <caret line="30" column="17" lean-forward="true" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

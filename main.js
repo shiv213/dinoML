@@ -1,4 +1,4 @@
-const TOTAL = 1000;
+const TOTAL = 50;
 let neat;
 
 let config = {
